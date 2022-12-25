@@ -2,7 +2,6 @@
   font-family: "Hussar";
     src: url("media/fonts/Hussar/HussarBoldWide-yqgd.otf");
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -24,9 +23,16 @@
 .carousel-indicators li{
     background-color: black;
 }
-.slogan{
-  background: url(/media/images/illustration-design.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+.shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+.banner{
+  background: url(/media/images/piano.jpg);
 }
