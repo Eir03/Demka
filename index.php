@@ -20,12 +20,12 @@
 
             while($row = mysqli_fetch_assoc($result)) {
                 echo'<div class="col pb-5">';
-                echo'    <div class="card" style="width: 18rem;">';
+                echo'    <div class="card" style="width: 18rem; height: 32rem;">';
                 echo'        <a href="product.php?' .$row['Id']. '"><img src="media\images\\' . $row['Image'] . '.jpeg" class="card-img-top" alt="..."/></a>';
                 echo'        <div class="card-body">';
                 echo'            <h5 class="card-title">' . $row['Name'] .'</h5>';
                 echo'            <p class="card-text">' . $row['Description'] .'</p>';
-                echo'            <a href="" class="btn btn-warning">В корзину</a>';
+                echo'            <a href="" class="btn btn-warning mb-5" style="position : absolute; bottom: 0;">В корзину</a>';
                 echo'        </div>';
                 echo'    </div>';
                 echo'</div>';
